@@ -37,7 +37,7 @@ const about = () => {
 
           <div className="flex max-w-[230px] justify-between mt-4 font-robotoserif text-lg  text-white dark:text-[#202020] ">
             <Link to="portfolio" offset={-96} smooth={true} duration={500}>
-              <button className=" bg-neutral-500 hover:bg-neutral-400 text-white font-bold py-2 px-4 border-b-4 border-neutral-700 hover:border-neutral-500 rounded">
+              <button className=" mt-4  bg-yellow-300 hover:bg-yellow-200 hover:text-neutral-700 text-neutral-900 font-bold py-2 px-4 border-b-4 border-yellow-500 hover:border-yellow-300 rounded">
                 Portfolio
               </button>
             </Link>
