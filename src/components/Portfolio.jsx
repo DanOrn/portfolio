@@ -27,7 +27,7 @@ const portfolio = () => {
                   Den er smart ved at du i tillegg til å kunne få info om strøm,
                   kan styre enheter i huset ditt.
                 </p>
-                <Modall />
+                <Modal />
               </div>
             </div>
           </div>
