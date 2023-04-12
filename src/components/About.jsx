@@ -41,11 +41,6 @@ const about = () => {
                 Portfolio
               </button>
             </Link>
-            <Link to="portfolio" offset={-96} smooth={true} duration={500}>
-              <button className=" bg-neutral-500 hover:bg-neutral-400 text-white font-bold py-2 px-4 border-b-4 border-neutral-700 hover:border-neutral-500 rounded">
-                Kontakt
-              </button>
-            </Link>
           </div>
         </div>
         <div className=" z-0 top-[-40rem] right-0 opacity-50">

@@ -32,24 +32,26 @@ const portfolio = () => {
             </div>
           </div>
 
-          <div className="">
-            <div className="rounded-md h-full flex justify-end bg-neutral-200 dark:bg-neutral-800">
-              <div className="flex-col self-center p-4">
-                <h1 className="text-2xl pb-4">Redesign av LearnER</h1>
-                <p>
-                  LearnER er skolens nettside som har med database å gjøre.
-                  Studentene har database som emne første semester, og får da
-                  innføring i ER-modellering. I denne casen har vi redesignet
-                  applikasjonen, med hensikten i å gjøre platformen mer
-                  attraktiv.
-                </p>
-                <Modall />
-              </div>
+          <div className="mb-24">
+            <div className="rounded-md h-full flex  bg-neutral-200 dark:bg-neutral-800  ">
               <img
                 className=" rounded-md h-[400px]"
                 src={portfolio1}
                 alt="tibber-logo"
               />
+              <div className="flex-col self-center p-4">
+                <h1 className="text-2xl pb-4">
+                  Modelleringsverktøy for databasestudenter
+                </h1>
+                <p>
+                  Studenter ved HK går første året gjennom faget databaser, i
+                  dette faget skal de lære seg å tegne Entieter og diagramer.
+                  Læreboken i faget har allerede en læringsplattform, men denne
+                  er ikke veldig inbydende. Casen går ut på redesign av
+                  nåværende løsning.
+                </p>
+                <Modall />
+              </div>
             </div>
           </div>
         </div>

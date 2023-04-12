@@ -23,13 +23,13 @@ const Navbar = () => {
 
       <ul className="flex">
         <li className="p-4">
-          <Link to="portfolio" offset={-96} smooth={true} duration={500}>
-            Portfolio
+          <Link to="home" offset={-96} smooth={true} duration={500}>
+            About
           </Link>
         </li>
         <li className="p-4">
-          <Link to="home" offset={-96} smooth={true} duration={500}>
-            About
+          <Link to="portfolio" offset={-96} smooth={true} duration={500}>
+            Portfolio
           </Link>
         </li>
       </ul>

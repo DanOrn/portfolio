@@ -7,7 +7,7 @@ export default function Modal() {
   return (
     <>
       <button
-        className="mt-4 modal-open bg-neutral-500 hover:bg-neutral-400 text-white font-bold py-2 px-4 border-b-4 border-neutral-700 hover:border-neutral-500 rounded"
+        className="mt-4 modal-open bg-yellow-300 hover:bg-yellow-200 hover:text-neutral-700 text-neutral-900 font-bold py-2 px-4 border-b-4 border-yellow-500 hover:border-yellow-300 rounded"
         type="button"
         onClick={() => setShowModal(true)}
       >

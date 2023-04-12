@@ -7,11 +7,11 @@ export default function Modall() {
   return (
     <>
       <button
-        className="mt-4 modal-open bg-neutral-500 hover:bg-neutral-400 text-white font-bold py-2 px-4 border-b-4 border-neutral-700 hover:border-neutral-500 rounded"
+        className="mt-4 modal-open bg-neutral-500  text-white font-bold py-2 px-4 border-b-4 border-neutral-700  rounded"
         type="button"
-        onClick={() => setShowModal(true)}
+        onClick={() => setShowModal(false)}
       >
-        Les mer
+        Under kreasjon...
       </button>
       {showModal ? (
         <>
