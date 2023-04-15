@@ -7,10 +7,10 @@ const ThemeSwitcher = () => {
   const [theme, setTheme] = useState(null);
 
   useEffect(() => {
-    if (window.matchMedia("prefer-color-scheme: dark").matches) {
-      setTheme("dark");
-    } else {
+    if (window.matchMedia("prefer-color-scheme: light").matches) {
       setTheme("light");
+    } else {
+      setTheme("dark");
     }
   }, []);
 
