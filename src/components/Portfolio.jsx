@@ -1,7 +1,8 @@
 import React from "react";
 import Modal from "./Modal";
 import Modall from "./Modall";
-import portfolio1 from "../assets/elektrond-portfolio2.png";
+import portfolio1 from "../assets/portfoliocard-elektrond.png";
+import portfolio2 from "../assets/portfoliocard-database.png";
 
 const portfolio = () => {
   return (
@@ -36,7 +37,7 @@ const portfolio = () => {
             <div className="rounded-md h-full flex  bg-neutral-200 dark:bg-neutral-800  ">
               <img
                 className=" rounded-md h-[400px]"
-                src={portfolio1}
+                src={portfolio2}
                 alt="tibber-logo"
               />
               <div className="flex-col self-center p-4">
