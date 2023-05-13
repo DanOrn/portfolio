@@ -9,7 +9,7 @@ import bannerstrom from "../assets/bannerstrom.png";
 import ikonbruk from "../assets/ikonbruk.png";
 import skriftbruk from "../assets/skriftbruk.png";
 import fargebruk from "../assets/fargebruk.png";
-import losning1 from "../assets/garasje.png";
+import losning1 from "../assets/styrditthjem.png";
 import losning2 from "../assets/minstrom.png";
 import losning3 from "../assets/uavhengig.png";
 
@@ -66,35 +66,31 @@ const Casestudy = () => {
             <img className="w-80" alt="alttekst" src={losning1} />
 
             <div className="flex items-center">
-              <div className="flex-col w-2/3">
-                <h1 className=" text-2xl font-bold mb-4">
-                  #1 Styr hjemmet ditt
+              <div className="flex-col w-full">
+                <h1 className=" text-2xl font-bold mb-6">
+                  #1 Smart hus kontroll
                 </h1>
-                <h2 className=" text-lg font-bold mb-2">Legg til scener</h2>
+                <h2 className=" text-lg font-bold mb-2">Scener</h2>
                 <ul className="text-lg list-disc pl-6">
                   <li>
-                    <p className="">
-                      Gjør opplevelsen din optimal med forhåndsinstilte scener.
-                    </p>
-                  </li>
-                  <li>
-                    <p className="pb-2">
-                      Alt du trenger å gjøre er å stille inn scenen, når scenen
-                      er instilt, er den bare et tapp unna å bli aktivert!
+                    <p className="mb-4">
+                      Ved å lage egne scener, kan brukere enkelt skru av og på
+                      flere <br /> enheter i hjemmet sitt samtidig.
                     </p>
                   </li>
                 </ul>
-                <h2 className=" text-lg font-bold mb-2">Legg til enheter</h2>
+                <h2 className=" text-lg font-bold mb-2">Enheter</h2>
                 <ul className="text-lg list-disc pl-6">
                   <li>
-                    <p className="">
-                      Andre løsninger tillater bare enheter fra deres merkevare.
+                    <p className="pb-2">
+                      Elektrond stenger ikke ute noen, og det er akkturat det
+                      som gjør den unik.
                     </p>
                   </li>
                   <li>
                     <p className="pb-2">
-                      Denne løsningen tilrettelegger for at du kan koble ALLE
-                      dine enheter opp i mot samme system!
+                      Ved å tillate ALLE bedrifters enheter å kobles opp i mot
+                      appen, vil brukerne få de mest tilpassede opplevelsene.
                     </p>
                   </li>
                 </ul>
@@ -102,16 +98,16 @@ const Casestudy = () => {
             </div>
           </div>
 
-          <div className="flex mt-12 ">
+          <div className="flex mt-12 gap-6">
             <div className="flex items-center">
-              <div className="flex-col w-3/4">
-                <h1 className="text-2xl font-bold mb-4">
-                  #2 Stømappen som er ærlig
+              <div className="flex-col w-full">
+                <h1 className="text-2xl font-bold mb-6">
+                  #2 Alt om ditt strømforbruk
                 </h1>
                 <h2 className="text-lg font-bold mb-2">Ovesikt strøm</h2>
                 <ul className="text-lg list-disc pl-6">
                   <li>
-                    <p className="pb-2">
+                    <p className="pb-4">
                       I strømoversikten for brukere fort oversikt over dagens,
                       månedens forbruk og samtidig mulighet til å se nåværende
                       strømpris og prisen gjennom dagen.
@@ -139,18 +135,17 @@ const Casestudy = () => {
             <img className="w-80" alt="alttekst" src={losning3} />
 
             <div className="flex items-center">
-              <div className="flex-col w-2/3">
-                <h1 className="text-2xl font-bold mb-4">#3 Uavhengig app</h1>
+              <div className="flex-col w-full">
+                <h1 className="text-2xl font-bold mb-6">
+                  #3 Den eneste uavhengige
+                </h1>
                 <h2 className=" text-lg font-bold mb-2">Helt uavhengig</h2>
                 <ul className="text-lg list-disc pl-6">
                   <li>
-                    <p className="pb-2">
-                      Du har sikkert opplevd å få tilbud om billigere
-                      strømavtale en gang i livet og vært fornøyd med at du
-                      sparer noen ekstra kroner ved å bytte. Det du kanskje ikke
-                      tenkte på var alle de små tingene du nå må lære deg på
-                      nytt med ny app og flere/færre funksjonaliteterenn den du
-                      hadde tidligere.
+                    <p className="pb-4">
+                      Ved bytte av strømleverandør kan det fort oppstå
+                      frustrasjon ved å måtte bytte app. Denne appen løser det,
+                      og lar deg ha hvilken som helst strømleverandør.
                     </p>
                   </li>
                 </ul>
