@@ -7,12 +7,13 @@ export default function Modal() {
   return (
     <>
       <button
-        className="mt-4 modal-open bg-yellow-300 hover:bg-yellow-200 hover:text-neutral-700 text-neutral-900 font-bold py-2 px-4 border-b-4 border-yellow-500 hover:border-yellow-300 rounded"
+        className="  modal-open modal-open bg-neutral-500 hover:bg-neutral-400 text-white font-bold py-2 px-4 border-b-4 border-neutral-700 hover:border-neutral-500 rounded"
         type="button"
         onClick={() => setShowModal(true)}
       >
         Les mer
       </button>
+
       {showModal ? (
         <>
           <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed w-full h-full inset-0 z-50 bg-neutral-50 dark:bg-neutral-900 text-[#202020] dark:text-white">

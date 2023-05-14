@@ -68,7 +68,7 @@ const Casestudy = () => {
             <div className="flex items-center">
               <div className="flex-col w-full">
                 <h1 className=" text-2xl font-bold mb-6">
-                  #1 Smart hus kontroll
+                  #1 Smarthus kontroll
                 </h1>
                 <h2 className=" text-lg font-bold mb-2">Scener</h2>
                 <ul className="text-lg list-disc pl-6">
@@ -149,9 +149,7 @@ const Casestudy = () => {
                     </p>
                   </li>
                 </ul>
-                <h2 className=" text-lg font-bold mb-2">
-                  Toppliste for å holde seg oppdatert
-                </h2>
+                <h2 className=" text-lg font-bold mb-2">Lett å velge best</h2>
                 <ul className="text-lg list-disc pl-6">
                   <li>
                     <p className="pb-2">

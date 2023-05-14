@@ -53,7 +53,7 @@ export default function Modal() {
                           forvirringer.
                         </p>
                         <div>
-                          <table class="table-fixed box-border border-4 border-neutral-600 mb-6 text-base">
+                          <table class="w-[620px] table-fixed box-border border-4 border-neutral-600 mb-6 text-base">
                             <thead>
                               <tr>
                                 <th>Funn</th>
@@ -64,7 +64,7 @@ export default function Modal() {
                             <tbody>
                               <tr className=" bg-neutral-600">
                                 <td className="pl-1">For små ikoner</td>
-                                <td className="py-2 pl-8">Ja</td>
+                                <td className="py-2 pl-24">Ja</td>
                                 <td className="pl-8 pr-1">
                                   Før endelig innlevering
                                 </td>
@@ -74,7 +74,7 @@ export default function Modal() {
                                   Legg til ny scene, rom, enhet fører til
                                   kognitiv belastning
                                 </td>
-                                <td className="py-2 pl-8">Ja</td>
+                                <td className="py-2 pl-24">Ja</td>
                                 <td className="pl-8 pr-1">
                                   Før endelig innlevering
                                 </td>
@@ -84,7 +84,7 @@ export default function Modal() {
                                 <td className="pl-1">
                                   Forvirring rundt "grønn-modus-knapp"
                                 </td>
-                                <td className="py-2 pl-8">Ja</td>
+                                <td className="py-2 pl-24">Ja</td>
                                 <td className="pl-8 pr-1">
                                   Før endelig innlevering
                                 </td>
@@ -93,7 +93,7 @@ export default function Modal() {
                                 <td className="pl-1">
                                   Varierende UI fører til en tregere UX
                                 </td>
-                                <td className="py-2 pl-8">Ja</td>
+                                <td className="py-2 pl-24">Ja</td>
                                 <td className="pl-8 pr-1">
                                   Før endelig innlevering
                                 </td>
@@ -104,13 +104,11 @@ export default function Modal() {
                       </div>
 
                       <img
-                        className="px-12"
+                        className="pl-24 pr-12 w-full"
                         src={Brukertest}
                         alt="dame og mann"
                       />
                     </div>
-
-                    <div className="mt-2 grid gap-x-4 grid-cols-2 grid-rows-2 text-lg"></div>
                   </div>
                 </div>
 

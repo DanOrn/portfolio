@@ -46,24 +46,12 @@ export default function Modal() {
                         Tibber, da samtlige hadde en plass på topplisten i
                         AppStore og gode ratings.
                       </p>
-                      <div className="grid grid-cols-2 grid-rows-2">
+                      <div className="grid grid-cols-4">
+                        <img className="pl-16" src={tibber} alt="tibber-logo" />
+                        <img className="pl-16" src={alexa} alt="tibber-logo" />
+                        <img className="pl-16" src={lyse} alt="tibber-logo" />
                         <img
-                          className="flex justify-center items-center pl-16"
-                          src={tibber}
-                          alt="tibber-logo"
-                        />
-                        <img
-                          className="flex justify-center items-center pl-16"
-                          src={alexa}
-                          alt="tibber-logo"
-                        />
-                        <img
-                          className="flex justify-center items-center pl-16 pt-4"
-                          src={lyse}
-                          alt="tibber-logo"
-                        />
-                        <img
-                          className="flex justify-center items-center pl-16 pt-4"
+                          className="pl-16"
                           src={applehome}
                           alt="tibber-logo"
                         />

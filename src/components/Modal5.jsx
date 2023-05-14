@@ -38,20 +38,16 @@ export default function Modal() {
                   <div className="h-full max-w-[1140px] my-6 mx-auto px-4 text-[#202020] dark:text-white ">
                     <div className="grid gap-x-4 grid-cols-2 justify-end ">
                       <p className="text-lg">
-                        Vi har laget vår første trådskisse i svart hvit for få
-                        brukerne våre til å fokusere på funksjonaliteten uten å
-                        bli påvirket av fargene. Det er tilsammen tegnet 16-
-                        sider med navigasjonssider som skal framstille de
-                        viktigeste funksjonalitetene til applikasjonen, men
-                        naturligvis er det ikke slik at alle sidene er fullført
-                        til minste detalj (f.eks. «Legg til bruker»).<br></br>{" "}
-                        Målet vårt er å presentere en vanskelig
+                        Vi har lagd tilsammen 16 frames til denne prototypen,
+                        hensikten er å fremstille de viktigste funksjonalitetene
+                        i appliksjonen. Den er lagd i svart/hvit for å ikke
+                        distrahere testere, slik at de kan fokusere på å
+                        fullføre oppgavene de får presentert.
+                        <br />
+                        <br /> Målet vårt er å presentere en vanskelig
                         Informasjonsarkitektur på en enklest mulig måte, slik at
                         brukeren kan bli presentert et komplekst system uten å
-                        bli overbelastet eller stresset. Vi har også laget
-                        animasjonseffekter som viser interaksjon ved hjelp av
-                        «komponenter» slik at knappene får «toggle» effekt eller
-                        blir markert når det blir trykket på.
+                        bli overbelastet eller stresset.
                       </p>
 
                       <iframe

@@ -1,8 +1,9 @@
 import React from "react";
 import Modal from "./Modal";
 import Modall from "./Modall";
-import portfolio1 from "../assets/portfoliocard-elektrond.png";
+
 import portfolio2 from "../assets/portfoliocard-database.png";
+import portfolio1 from "../assets/portfoliocard-elektrond.png";
 
 const portfolio = () => {
   return (
@@ -13,8 +14,8 @@ const portfolio = () => {
       <div className=" max-w-[1140px] mx-auto px-4 text-[#202020] dark:text-white ">
         <h1 className="my-6 text-4xl font-robotoserif font-bold">Portfolio</h1>
         <div className="grid gap-y-8">
-          <div className="">
-            <div className="rounded-md h-full flex  bg-neutral-200 dark:bg-neutral-800  ">
+          <div className="modal-open">
+            <div className="rounded-sm h-full flex  bg-neutral-200 dark:bg-neutral-800  ">
               <img
                 className=" rounded-md h-[400px]"
                 src={portfolio1}

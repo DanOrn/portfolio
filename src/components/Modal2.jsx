@@ -2,6 +2,10 @@ import React from "react";
 import { RiCloseCircleFill } from "react-icons/ri";
 import { BiLinkExternal } from "react-icons/bi";
 import sporreundersokelse from "../assets/sporreundersokelse.png";
+import pro60 from "../assets/60prosent.png";
+import pro90 from "../assets/90prosent.png";
+import pro50 from "../assets/50prosent.png";
+import pro5050 from "../assets/5050prosent.png";
 
 export default function Modal() {
   const [showModal, setShowModal] = React.useState(false);
@@ -45,7 +49,7 @@ export default function Modal() {
                         var bla. studenter, advokat, akademiker,
                         lege/sykepleier, salg og konsulent. Dette er en variert
                         testgruppe med forskjellige personligheter og vi tror
-                        det kan gi oss et nøyaktig resultat.
+                        det kan gi oss et godt resultat.
                         <br />
                         <br /> Målet med spørreundersøkelsen var å kunne få en
                         dypere forståelse av atferden til individer når de
@@ -53,8 +57,8 @@ export default function Modal() {
                         teknologi, smarthjem og strøm-applikasjoner.
                       </p>
                       <img
-                        className="rounded-full h-[300px]"
-                        alt="Spørreundersøkelse-bilde"
+                        className="my-8 h-full"
+                        alt="testgruppe-bilde"
                         src={sporreundersokelse}
                       />
                     </div>
@@ -62,54 +66,48 @@ export default function Modal() {
                       <h1 className="font-medium text-lg pb-2">
                         Funn fra spørreundersøkelse:
                       </h1>
-                      <div className="mt-2 grid gap-x-4 grid-cols-2 grid-rows-2 text-base">
+                      <div className="grid grid-cols-4 gap-6 text-base">
                         <div>
-                          <p>
-                            60% slår av varmen når de skal være borte i en
-                            lengre periode.
-                          </p>
-                          <p className="mt-2">
-                            90% betaler strømregningene sine gjennom
-                            mobiltelefonen.
-                          </p>
-                          <p className="mt-2">
-                            Bare halvparten av deltakerne har brukt «smart home»
-                            applikasjon fra før av.
+                          <img
+                            className="my-8 "
+                            alt="testgruppe-bilde"
+                            src={pro5050}
+                          />
+                          <p className="text-center">
+                            Tenker ofte på strømforbruket sitt
                           </p>
                         </div>
-                        <div className="">
-                          <p>
-                            50% sier at en slik applikasjon som kontrollerer
-                            varmen, belysning og lås ville effektivisert
-                            hverdagen deres.
+                        <div>
+                          <img
+                            className="my-8 "
+                            alt="testgruppe-bilde"
+                            src={pro90}
+                          />
+                          <p className="text-center">
+                            Betaler strømregningene sine gjennom mobiltelefonen
                           </p>
-                          <ul className="list-disc pl-6">
-                            <li>
-                              Mens 30% sier det ville hjulpet dem i særegne
-                              situasjoner der de glemmer å slå av.
-                            </li>
-                          </ul>
                         </div>
-                        <div className="">
-                          <p>
-                            70% av deltakerne slår alltid av lyset når de
-                            forlater hjemmet.
+                        <div>
+                          <img
+                            className="my-8 "
+                            alt="testgruppe-bilde"
+                            src={pro50}
+                          />{" "}
+                          <p className="text-center">
+                            Tenker at en smarthjem og strøm app ville
+                            effektivisert hverdagen deres
                           </p>
-                          <ul className="list-disc pl-6">
-                            <li>30% går tilbake hvis de har glemt å slå av.</li>
-                          </ul>
                         </div>
-
-                        <div className="">
-                          <p>
-                            50% av deltakerne tenker ofte på strømforbruket sitt
+                        <div>
+                          <img
+                            className="my-8 "
+                            alt="testgruppe-bilde"
+                            src={pro60}
+                          />
+                          <p className="text-center">
+                            Slår av varmen når de skal være borte i lengre
+                            perioder
                           </p>
-                          <ul className="list-disc pl-6">
-                            <li>
-                              20% er mer bekymret for strømprisene, enn selve
-                              forbruket.
-                            </li>
-                          </ul>
                         </div>
                       </div>
                     </div>
