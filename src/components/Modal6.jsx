@@ -56,45 +56,47 @@ export default function Modal() {
                           <table class="w-[620px] table-fixed box-border border-4 border-neutral-600 mb-6 text-base">
                             <thead>
                               <tr>
-                                <th>Funn</th>
-                                <th className="pl-4 py-2 ">Kritisk</th>
-                                <th className="">Frist for endring</th>
+                                <th className="text-left pl-2">Funn</th>
+                                <th className=" py-2 pl-8 w-24">Kritisk</th>
+                                <th className="text-left pl-16 ">
+                                  Frist for endring
+                                </th>
                               </tr>
                             </thead>
                             <tbody>
                               <tr className=" bg-neutral-600">
-                                <td className="pl-1">For små ikoner</td>
-                                <td className="py-2 pl-24">Ja</td>
-                                <td className="pl-8 pr-1">
+                                <td className="pl-2 w-full">For små ikoner</td>
+                                <td className="py-2 pl-14">Ja</td>
+                                <td className="pl-16 pr-1">
                                   Før endelig innlevering
                                 </td>
                               </tr>
                               <tr>
-                                <td className="pl-1">
+                                <td className="pl-2">
                                   Legg til ny scene, rom, enhet fører til
                                   kognitiv belastning
                                 </td>
-                                <td className="py-2 pl-24">Ja</td>
-                                <td className="pl-8 pr-1">
+                                <td className="py-2 pl-14">Ja</td>
+                                <td className="pl-16 pr-1">
                                   Før endelig innlevering
                                 </td>
                               </tr>
 
                               <tr className="bg-neutral-600">
-                                <td className="pl-1">
+                                <td className="pl-2">
                                   Forvirring rundt "grønn-modus-knapp"
                                 </td>
-                                <td className="py-2 pl-24">Ja</td>
-                                <td className="pl-8 pr-1">
+                                <td className="py-2 pl-14">Ja</td>
+                                <td className="pl-16 pr-1">
                                   Før endelig innlevering
                                 </td>
                               </tr>
                               <tr>
-                                <td className="pl-1">
+                                <td className="pl-2">
                                   Varierende UI fører til en tregere UX
                                 </td>
-                                <td className="py-2 pl-24">Ja</td>
-                                <td className="pl-8 pr-1">
+                                <td className="py-2 pl-14">Ja</td>
+                                <td className="pl-16 pr-1">
                                   Før endelig innlevering
                                 </td>
                               </tr>

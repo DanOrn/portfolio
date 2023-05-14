@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 
 const about = () => {
   return (
-    <div name="home" className="h-screen  text-[#202020] dark:text-white  ">
+    <div name="home" className="  text-[#202020] dark:text-white  ">
       <div className="z-1 mt-[-4rem] max-w-[1140px] mx-auto ">
         <div className=" z-0 top-[-40rem] right-[-10rem] opacity-50">
           <Lottie

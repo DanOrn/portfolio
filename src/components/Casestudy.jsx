@@ -18,7 +18,7 @@ const Casestudy = () => {
     <div className="w-full text-lg ">
       <img className="rounded-b-md h-1/4 " alt="alttekst" src={bannerstrom} />
       <div className="h-full max-w-[1080px] my-6 mx-auto text-[#202020] dark:text-white ">
-        <h1 className="my-12 text-5xl font-robotoserif font-bold">
+        <h1 className="my-12 text-5xl font-bold">
           Elektrond - En Smartstrøm-app
         </h1>
         <div className="flex justify-between">
@@ -31,7 +31,7 @@ const Casestudy = () => {
           <div>
             <h2 className=" font-bold">Min rolle</h2>
             <ul className="list-disc pl-6">
-              <li>UX/UI, Interaksjons design</li>
+              <li className="pb-1">UX/UI, Interaksjons design</li>
               <li>Brukerintervjuer/tester</li>
             </ul>
           </div>
@@ -44,13 +44,13 @@ const Casestudy = () => {
           <div>
             <h2 className="font-bold">Verktøy</h2>
             <ul className="list-disc pl-6">
-              <li>Figma</li>
+              <li className="pb-1">Figma</li>
               <li>FigJam</li>
             </ul>
           </div>
         </div>
-        <div className="my-8 font-robotoserif">
-          <h1 className=" text-3xl font-bold mb-4">Oppgaven vi fikk</h1>
+        <div className="my-24 font-robotoserif">
+          <h1 className=" text-3xl font-bold my-4">Oppgaven vi fikk</h1>
           <p className=" text-xl italic">
             Lag en «strøm-smartapp/tjeneste», som gjør det enklere for folk å ha
             oversikt eller <br></br> kontroll over ting som har med strøm og
@@ -164,7 +164,9 @@ const Casestudy = () => {
           </div>
         </div>
 
-        <h1 className="mb-4 text-3xl font-robotoserif font-bold">Research</h1>
+        <h1 className="mb-4 mt-24 text-3xl font-robotoserif font-bold">
+          Research
+        </h1>
         <div className="flex gap-12">
           <div className="w-1/2">
             <h2 className="mb-4 text-xl font-bold font-robotoserif">
@@ -193,7 +195,7 @@ const Casestudy = () => {
             <Modal2 />
           </div>
         </div>
-        <div>
+        <div className="my-16">
           <h2 className="pt-12 text-3xl font-bold mb-4">
             🔎 Funn etter research
           </h2>
@@ -208,7 +210,10 @@ const Casestudy = () => {
             kommer også frem at samtlige leverandører låser brukerne deres til
             deres merkevare og gjør det tungtvindt å skifte.
           </p>
-          <p> Dette ga oss grunnlag til å utvikle en personas</p>
+          <p>
+            Dette ga oss grunnlag til å utvikle en personas og en overordnet
+            sitemap av sidene til vår tenkte løsning
+          </p>
         </div>
         <div className="flex py-12 gap-12">
           <div className="w-1/2">
@@ -262,7 +267,7 @@ const Casestudy = () => {
             <Modal6 />
           </div>
         </div>
-        <div className="py-8">
+        <div className="py-16">
           {" "}
           <h1 className=" text-3xl font-bold mb-4">↩️ Iterasjoner</h1>
           <p className="my-4">

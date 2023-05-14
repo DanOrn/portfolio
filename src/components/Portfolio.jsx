@@ -9,7 +9,7 @@ const portfolio = () => {
   return (
     <div
       name="portfolio"
-      className=" h-full max-w-[1140px]  px-4 mx-auto  text-[#202020] dark:text-white"
+      className=" h-full max-w-[1140px]   mx-auto  text-[#202020] dark:text-white"
     >
       <div className=" max-w-[1140px] mx-auto px-4 text-[#202020] dark:text-white ">
         <h1 className="my-6 text-4xl font-robotoserif font-bold">Portfolio</h1>
@@ -23,7 +23,7 @@ const portfolio = () => {
               />
               <div className="flex-col self-center p-4">
                 <h1 className="text-2xl pb-4">Smartstrøm-app</h1>
-                <p>
+                <p className="pb-4">
                   En uavhenig smartstrøm-app som har til hensikt å gjøre det
                   lettere for brukere å få oversikt og kontroll over strømbruk.
                   Den er smart ved at du i tillegg til å kunne få info om strøm,
@@ -46,11 +46,12 @@ const portfolio = () => {
                   Modelleringsverktøy for databasestudenter
                 </h1>
                 <p>
-                  Studenter ved HK går første året gjennom faget databaser, i
-                  dette faget skal de lære seg å tegne Entieter og diagramer.
-                  Læreboken i faget har allerede en læringsplattform, men denne
-                  er ikke veldig inbydende. Casen går ut på redesign av
-                  nåværende løsning.
+                  Studenter som går IT-bachelor på Høyskolen Kristiania, skal på
+                  sitt første år ta faget databaser. I dette faget skal de bla.
+                  lære å lage entiteter og diagrammer. Faget har allerede en
+                  læringsplattform, men denne plattformen er ikke spesielt
+                  brukervennlig. Derfor går casen ut på å redesigne den
+                  nåværende løsningen.
                 </p>
                 <Modall />
               </div>
