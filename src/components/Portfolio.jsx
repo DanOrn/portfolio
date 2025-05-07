@@ -1,9 +1,8 @@
 import React from "react";
-import Modall from "./Modall";
+import { Link } from "react-router";
 import portfolio2 from "../assets/biothumbnail.png";
 import portfolio1 from "../assets/portfoliocard-elektrond.png";
-import Skilthumb from "../assets/skilthumb.png";
-import { Link } from "react-router";
+import Skilthumb from "../assets/skilthumb1.png";
 
 const PortfolioSection = () => {
   return (
