@@ -16,7 +16,7 @@
 
 /* Klasse for å vise scrollbaren og style den */
 .scrollbar-visible {
-  scrollbar-width: "auto !important; /* Firefox */
+  scrollbar-width: auto !important; /* Firefox */
   -ms-overflow-style: auto !important; /* IE/Edge */
 }
 
