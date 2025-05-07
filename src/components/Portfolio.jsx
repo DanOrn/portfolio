@@ -4,6 +4,8 @@ import portfolio2 from "../assets/biothumbnail.png";
 import portfolio1 from "../assets/portfoliocard-elektrond.png";
 import Skilthumb from "../assets/skilthumb1.png";
 
+
+
 const PortfolioSection = () => {
   return (
     <div
@@ -24,7 +26,7 @@ const PortfolioSection = () => {
               />
               <div className="flex-col self-center pl-8 p-4">
                 <h1 className="text-2xl pb-4">
-                  Skilteffektuering: Bestill skilt på 1, 2, 3!
+                  SSkilteffektuering: Bestill skilt på 1, 2, 3!
                 </h1>
                 <p className="pb-4">
                   Oslo kommunes offisielle parkeringsapp utviklet for å gjøre
