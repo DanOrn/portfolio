@@ -1,31 +1,20 @@
 import React from "react";
-import ReactCompareImage from "react-compare-image";
 import Lottie from "lottie-react";
+import ReactCompareImage from "react-compare-image";
 import Klartilbestilling from "../assets/klartilbestilling.png";
 import EnSak from "../assets/ensak.png";
+import BeforeExcel from "../assets/beforeexcel.png";
 import BestillingsSkjema from "../assets/bestillingsskjema.png";
 import Padden from "../assets/padden.json";
-import losning2 from "../assets/minsidegammel.png";
-import losning3 from "../assets/minsideny.png";
-import checkboxChecked from "../assets/check-box-checked.png";
-import checkboxUnchecked from "../assets/check-box-unchecked.png";
-import losning4 from "../assets/ladeinfo.json";
-import ladefilter from "../assets/ladefilter.json";
-import ladekort from "../assets/ladekort.json";
-import Ladeparkeringsflyt from "./LadeparkeringModal";
-import Infokort from "../assets/ladeinfo.json";
-import Gatevarsling from "../assets/gatevarsling.json";
-import Minside from "../assets/minside.json";
-const icons = import.meta.glob("../assets/ikonerbio/*.svg", {
-  eager: true,
-  import: "ReactComponent",
-});
+import ScrollableImage from "./ScollableImage";
+import FinnBestilling from "../assets/finnbestilling.png";
+
 
 const CaseSkilt = () => {
   return (
-    <div className="w-full font-robotoserif text-xl leading-[1.5] text-[#202020] dark:text-white">
+    <div className="mx-auto w-[1024px] font-robotoserif text-lg leading-[1.5] text-[#202020] dark:text-white">
       {/* Seksjon: Prosjektbeskrivelse */}
-      <section className="px-8 pt-12 mx-auto max-w-[1024px]">
+      <section className="px-8 pt-12  ">
         <h1 className="mb-10 text-5xl font-bold">
           Skilteffektuering - Bestill skilt på 1, 2, 3!
         </h1>
@@ -44,11 +33,11 @@ const CaseSkilt = () => {
               items: [
                 "UX/UI, Interaksjonsdesign",
                 "Universell utforming",
-                "Designsystem",
+                "Kartlegge flyt",
               ],
             },
           ].map((section, index) => (
-            <div key={index}>
+            <div className="text-xl" key={index}>
               <h2 className="font-bold mb-2">{section.title}</h2>
               <ul className="list-none">
                 {section.items.map((item, idx) => (
@@ -60,10 +49,10 @@ const CaseSkilt = () => {
         </div>
       </section>
 
-      <section className="font-robotoserif px-8 py-12 mx-auto max-w-[1024px]">
-        <h2 className="text-4xl font-bold mb-6">Utfordring</h2>
+      <section className="px-8 py-12">
+        <h2 className="text-3xl font-bold mb-6">Utfordring</h2>
         <h4 className="text-2xl font-bold mb-2">Bakgrunn</h4>
-        <p className="mb-8 ">
+        <p className="mb-6 ">
           Det er i dag to interne saksbehandlere som har ansvaret for bestilling
           og oppfølging av mellom 750 og 1 000 trafikkskilt årlig i Oslo
           kommune. Prosessen håndteres manuelt, med Excel-lister og
@@ -71,7 +60,7 @@ const CaseSkilt = () => {
           personavhengig.
         </p>
         <h4 className="text-2xl font-bold mb-2">Problemstilling</h4>
-        <p className="mb-8 italic">
+        <p className="mb-6 italic">
           Hvordan kan vi utvikle en helhetlig digital løsning som effektiviserer
           prosessen, reduserer personavhengigheten, og sikrer bedre oversikt,
           sporbarhet og dokumentasjon?
@@ -85,24 +74,70 @@ const CaseSkilt = () => {
       </section>
 
       {/* Seksjon: Utvalgte Prosjekter */}
-      <section className="px-8 py-12 mx-auto max-w-[1024px]">
-        <h2 className="text-4xl font-bold mb-12 ">Løsningen</h2>
+      <section className="px-8 py-12">
+        <h2 className="text-3xl font-bold mb-8 ">Løsningen</h2>
+
+        <div className="pb-24">
+          <h3 className="text-2xl font-bold mb-4">
+            Brukerfokusert tilnærming skaper de beste resultatene
+          </h3>
+          <p className="mb-2">
+            <strong>
+              For å sikre at løsningen møtte reelle behov, var det viktig å
+              involvere nøkkelpersonene i prosessen – de to saksbehandlerne som
+              håndterer bestillingene, samt entreprenøren og montørene som
+              utfører dem.
+            </strong>
+          </p>
+          <p className="mb-8">
+            Gitt deres travle hverdag, var det spesielt viktig å ta hensyn til
+            deres tid. Jeg planla derfor møtene i god tid, gjennomførte egen
+            forberedende research, observerte dem i arbeid med bestillinger, og
+            utarbeidet en tydelig agenda med relevante spørsmål. Dette la
+            grunnlaget for effektive og målrettede intervjuer, gruppearbeid og
+            workshops.
+          </p>
+
+          <h3 className="text-2xl font-bold mb-4">
+            Kartlegging av flyt
+          </h3>
+          <p className="mb-2">
+            En av de første oppgavene jeg tok tak i da prosjektet startet, var å
+            kartlegge den eksisterende bestillingsflyten.{" "}
+          </p>
+          <p className="mb-2">
+            Dette var for å få oversikt over hele bestillingsprosessen –
+            fra saksbehandler mottar bestilling, via entreprenør og montør som fysisk setter opp skiltet,
+             til det avsluttes med at saksbehandler kvalitetssikrer og godkjenner arbeidet.
+          </p>
+
+          <p className="mb-4">
+            Ved å visualisere denne prosessen tidlig, fikk hele teamet en felles
+            forståelse av hva som faktisk skjer underveis. Det gjorde det
+            enklere å identifisere mulige utfordringer og finne konkrete
+            forbedringspunkter vi kunne utforske.
+          </p>
+          <h4 className="text-2xl font-bold mb-2">Ny og forbedret arbeidsflyt</h4>
+          {/* Scrollable flyt */}
+          <ScrollableImage />
+
+          <p className="text-base">
+            <strong>Klikk og dra mot venstre, eller bruk scroll for å se hele flyten.</strong>
+          </p>
+        </div>
+
         {/* Del 1: Innledning */}
         <div className="pb-12">
           <h3 className="text-2xl font-bold mb-4">
-            Slutt på leting etter bestillinger
+          Automatisk overføring fra vedtak til bestilling
           </h3>
           <p className="">
-            Ved å automatisere overføringen fra STR Sak (et verktøy for
-            opprettelse av skiltforskrifter) til Skilteffektuering, slipper
-            bestillerne nå å manuelt identifisere hvilke saker som er vedtatt og
-            klare for bestilling. <br />
+            Ved å automatisere overføring fra STR Sak – systemet som brukes til å opprette skiltforskrifter 
+            – slipper bestillerne nå å manuelt finne ut hvilke saker som er vedtatt og klare for bestilling.<br />
             <br />
-            Når en sak vedtas, overføres den automatisk til Skilteffektuering
-            under fanen "Klar til bestilling/Venter handling", der den videre
-            bestillingen kan gjennomføres. <br />
-            Dette har fjernet et av flere tunge manuelle ledd i
-            bestillingsprosessen.
+            Når en sak er vedtatt, sendes den automatisk inn i Skilteffektuering under fanen "Klar til bestilling / Venter handling", 
+            hvor den videre bestillingen kan gjennomføres. <br />
+            Dette har fjernet et tidkrevende og sårbart manuelt ledd i prosessen.
           </p>
           <img
             className="mb-8"
@@ -110,60 +145,45 @@ const CaseSkilt = () => {
             src={Klartilbestilling}
           />
         </div>
-
         {/* Del 2: Innledning */}
         <div className="pb-12">
-          <h3 className="text-2xl font-bold mb-4">
-            Brukerfokusert saksoversikt
-          </h3>
-          <h4 className="text-xl font-bold mb-2">Bestillerne i sentrum</h4>
-          <p className="mb-8">
-            For å sikre at løsningen traff reelle behov, var det avgjørende å
-            involvere de to saksbehandlerne som håndterer bestillinger. Gitt
-            deres travle hverdag, var det spesielt viktig å ta hensyn til deres
-            tid. Jeg planla derfor møtene i god tid, gjennomførte egen
-            forberedende research, observerte dem i arbeid med bestillinger, og
-            utarbeidet en tydelig agenda med relevante spørsmål. Dette la
-            grunnlaget for effektive intervjuer, workshops og gruppearbeid.
-          </p>
+          <h4 className="text-2xl font-bold mb-2">Inne på en bestilling</h4>
+
           <h4 className="text-xl font-bold mb-2">
-            Bruk av UX-prinsipper i design av saksoversikten
+            Bruk av UX-prinsipper på design av én bestilling
           </h4>
-          <p className="mb-4 text-lg">
+          <p className="mb-4">
             Skjermbildet under viser hvordan jeg har brukt sentrale UX-lover for
             å gjøre et komplekst saksbehandlingsverktøy enklere og mer effektivt
             i bruk:
           </p>
-          <ul className="space-y-3 list-disc pl-6 text-lg">
-            <li className="ml-2">
+          <ul className="space-y-3 list-none">
+            <li className="">
               <strong>Hick’s Law:</strong> Antall synlige valg er redusert til
               det nødvendige – f.eks. "Bestill" og "Returner STR Sak" – dette
               for å gjøre hovedhandlingene enkle å velge mellom.
             </li>
-            <li className="ml-2">
+            <li className="">
               <strong>Fitts’s Law:</strong> Viktige handlingsknapper er plassert
               nederst til høyre, lett tilgjengelig og med god størrelse for rask
               interaksjon.
             </li>
-            <li className="ml-2">
+            <li className="">
               <strong>Jakob’s Law:</strong> Layouten følger etablerte mønstre
               fra lignende forvaltningssystemer (venstremeny for navigasjon,
               detaljpanel i midten, metadata til høyre), noe som gjør
               grensesnittet lett gjenkjennelig.
             </li>
-            <li className="ml-2">
-              <strong>Law of Proximity:</strong> Relatert informasjon er
-              gruppert i egne seksjoner som "Oppdragsbeskrivelse", "Grunnlag fra
-              forskrift", og "Vedlegg", noe som gir en logisk
-              informasjonsstruktur.
+            <li className="">
+              <strong>Law of Proximity:</strong> Relatert informasjon er organisert i tydelige seksjoner – som bla. "Oppdragsbeskrivelse" og "Grunnlag fra forskrift" i Saksoversikten, og "Saksbehandler" og "Viktige datoer" i Bestillingsinfo – noe som gir en logisk og lettnavigert informasjonsstruktur.
             </li>
-            <li className="ml-2">
+            <li className="">
               <strong>Aesthetic-Usability Effect:</strong> Et ryddig og nøytralt
               visuelt uttrykk med god typografi, fargebruk og ikonografi gjør
               systemet mer brukervennlig og tillitvekkende.
             </li>
           </ul>
-          <p className="mt-4 text-lg">
+          <p className="mt-4">
             Dette bidrar til en arbeidsflate som hjelper brukeren å fokusere,
             navigere raskt og ta informerte beslutninger uten unødvendig
             kognitiv belastning.
@@ -175,73 +195,70 @@ const CaseSkilt = () => {
           />
         </div>
 
- {/* Del 3: Innledning */}
+        {/* Del 3: Innledning */}
         <div className="pb-12">
           <h3 className="text-2xl font-bold mb-4">
-          Fra Excel-kaos til tydelige roller og ansvar
+          Fra Excel-kaos til effektiv bestilling
           </h3>
-          <p className="">
-          Etter at den nye løsningen ble tatt i bruk, slipper saksbehandlerne å bruke tid på å samle og sende informasjon manuelt til entreprenøren. 
-          Nå kan de heller fokusere på å legge inn presis bestillingsinformasjon, som navn og telefonnummer til prosjektansvarlig, 
-          og bruke mer tid på å kontrollere at skilt er satt ut som de skal i kvalitetskontrollen. 
-           I tillegg får andre avdelinger som ikke har bestilt skilt før, veiledning underveis – slik at de etter hvert kan gjøre det selv.
-          </p>
-          <img
-            className="mb-8"
-            alt="Skjermbilde av siden Klar til bestilling"
-            src={BestillingsSkjema}
-          />
-        </div>
-
-         {/* Del 3: Innledning */}
-         <div className="pb-12">
-          <h3 className="text-2xl font-bold mb-4">
-          Fra Excel-kaos til tydelige roller og ansvar
-          </h3>
-          <p className="">
-          Etter at den nye løsningen ble tatt i bruk, slipper saksbehandlerne å bruke tid på å samle og sende informasjon manuelt til entreprenøren. 
-          Nå kan de heller fokusere på å legge inn presis bestillingsinformasjon, som navn og telefonnummer til prosjektansvarlig, 
-          og bruke mer tid på å kontrollere at skilt er satt ut som de skal i kvalitetskontrollen. 
-           I tillegg får andre avdelinger som ikke har bestilt skilt før, veiledning underveis – slik at de etter hvert kan gjøre det selv.
-          </p>
-          <img
-            className="mb-8"
-            alt="Skjermbilde av siden Klar til bestilling"
-            src={BestillingsSkjema}
-          />
-        </div>
-
-        <div className="pb-12">
-          <h4 className="text-xl font-bold mb-2">Nye ikoner</h4>
           <p className="mb-4">
-            Ettersom flere ikoner ikke var tilgjengelige i det nåværende
-            designsystemet, måtte jeg designe nye.
+          Med den nye løsningen slipper saksbehandlerne å samle og sende informasjon manuelt. 
+          I stedet kan de fokusere på presise bestillinger og sikre kvalitet i oppfølgingen. 
+          Samtidig får andre avdelinger god veiledning, og kan etter hvert bestille skilt på egen hånd.
           </p>
-          <div className="flex flex-wrap gap-4">
-            {Object.entries(icons).map(([path, Icon], index) => (
-              <Icon
-                key={index}
-                className=" w-12 h-12 text-[#202020] dark:text-white"
-              />
-            ))}
+          <h3 className="text-xl font-bold">
+          Før og etter bilde av bestillingsskjema
+          </h3>
+          <div className="relative w-full h-fit overflow-hidden">
+            <ReactCompareImage
+              leftImage={BeforeExcel}
+              rightImage={BestillingsSkjema}
+              alt="Sammenligning av før- og etterbilde"
+              sliderLineColor="#38363D"
+              sliderPositionPercentage={0.5}
+              sliderLineHeight="100px"
+            />
           </div>
         </div>
+
+        {/* Del 3: Innledning */}
+        <div className="pb-12">
+          <h3 className="text-2xl font-bold mb-4">
+            Finn bestilling - raskt og effektivt
+          </h3>
+          <p className="">
+          I stedet for å lete gjennom e-poster eller ringe kolleger, kan saksbehandlere nå søke,
+           filtrere og sortere for raskt å finne akkurat den bestillingen de trenger. Det sparer tid og gir bedre kontroll.
+          </p>
+          <img
+            className="mb-8"
+            alt="Skjermbilde av siden Klar til bestilling"
+            src={FinnBestilling}
+          />
+        </div>
+
         {/* Del2: Velkomstskjerm */}
-        <div className="h-full py-12 flex flex-col justify-center">
-          <div>
-            <h3 className="text-2xl font-bold mb-4">Tablet ute i felt for montørene</h3>
-            <p>
-              Brukerne møtes av en visuell og informativ velkomst, der appens
-              funksjonalitet forklares kort ved hjelp av illustrasjoner og enkel
-              tekst.
+        <h3 className="text-2xl font-bold mb-6">
+        Enkel og tilpasset løsning for montører i felt
+            </h3>
+        <div className="pb-12 flex items-center justify-between">
+        
+          <div className="max-w-[380px]">
+          <h3 className="text-xl font-bold mb-2">
+          Adaptivt design for nettbrett
+            </h3>
+            <p className="mb-8">
+            Montørene i felt får en forenklet versjon av løsningen, tilpasset deres arbeidssituasjon og enhet.
+            Denne er designet på prinsipper fra adaptivt design, der unødvendige komponenter fra PC-versjonen er fjernet for å redusere kognitiv
+             belastning. Montørene får kun den informasjonen de trenger for å utføre oppgavene sine – presentert i en oversiktlig og handlingsorientert visning. <br/>
+            Med store klikkeflater blir det enkelt å navigere og utføre bestillinger effektivt, selv ute i felt.
             </p>
           </div>
+          <div className="w-full max-w-[600px] pl-8">
+            <Lottie animationData={Padden} loop={true} />
+          </div>
 
-          <div className="w-full max-w-[800px]">
-              <Lottie animationData={Padden} loop={true} />
-            </div>
         </div>
-        </section>
+      </section>
 
       <section className="p-8 mx-auto max-w-[1024px] ">
         <div className="mb-8 gap-8 flex justify-between">
@@ -251,13 +268,12 @@ const CaseSkilt = () => {
                 Oppsummering og veien videre
               </h4>
               <p className="mb-3">
-                <strong>Helhetlig og bra</strong> <br />
-                Mange av appens sider fremsto som umoderne og brøt med flere
-                etablerte estetiske prinsipper. Jeg tok utgangspunkt i
-                dropdown-komponenten fra navigasjonsmenyen i designsystemet
-                (tilpasset desktop), og videreutviklet den for mobil. Løsningen
-                ble optimalisert med touchflater, tekststørrelser og kontraster
-                som oppfyller kravene til universell utforming.
+                
+                Gjennom utviklingen av Skilteffektuering har vi forvandlet en manuell og fragmentert prosess til en effektiv digital løsning. Ved å redusere manuelle oppgaver <strong>fra 48 til 16</strong>, har saksbehandlerne gått <strong>fra å bruke 29 timer per måned på bestillinger til kun 3,5 timer.</strong> Dette har frigjort tid og økt effektiviteten betydelig.
+
+Løsningen gir saksbehandlere full oversikt, montører en forenklet versjon og andre avdelinger mulighet til å bestille skilt på egen hånd med veiledning. Designet er brukervennlig og tilpasset ulike enheter og brukergrupper.
+
+Veien videre innebærer kontinuerlig forbedring basert på tilbakemeldinger, med fokus på ytterligere automatisering og integrasjon med andre interne verktøy.
               </p>
             </div>
           </div>

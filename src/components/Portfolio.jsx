@@ -26,7 +26,7 @@ const PortfolioSection = () => {
               />
               <div className="flex-col self-center pl-8 p-4">
                 <h1 className="text-2xl pb-4">
-                  SSkilteffektuering: Bestill skilt på 1, 2, 3!
+                  Skilteffektuering: Bestill skilt på 1, 2, 3!
                 </h1>
                 <p className="pb-4">
                   Oslo kommunes offisielle parkeringsapp utviklet for å gjøre

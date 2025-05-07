@@ -3,13 +3,39 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 
+/* Skjuler scrollbar for IE, Edge og Firefox */
 * {
-  /* hide scrollbar for IE, Edge and Firefox */
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+  -ms-overflow-style: none; /* IE/Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
-/* hide scrollbar for chrome, safari and opera */
+/* Skjuler scrollbar for Chrome, Safari og Opera */
 *::-webkit-scrollbar {
   display: none;
 }
+
+/* Klasse for å vise scrollbaren og style den */
+.scrollbar-visible {
+  scrollbar-width: "auto !important; /* Firefox */
+  -ms-overflow-style: auto !important; /* IE/Edge */
+}
+
+/* Vis scrollbar for Chrome, Safari og Opera */
+.scrollbar-visible::-webkit-scrollbar {
+  display: block !important; /* Vist for Chrome, Safari, Opera */
+  width: 8px; /* Bredde på scrollbar */
+  height: 16px; /* Høyde på horisontal scrollbar */
+}
+
+/* Styling for scrollbar-thumb (den bevegelige delen) */
+.scrollbar-visible::-webkit-scrollbar-thumb {
+  background-color: #888; /* Gråfarge på thumb */
+  border: 2px solid #ffffff; /* Lager en lys kant rundt thumb */
+}
+
+/* Styling for scrollbar-track (bakgrunnen til scrollbaren) */
+.scrollbar-visible::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Lys grå bakgrunn */
+}
+
+
