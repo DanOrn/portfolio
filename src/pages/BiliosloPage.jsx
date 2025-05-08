@@ -1,5 +1,5 @@
 import React from "react";
-import Casestudy from "../components/Casestudy2";
+import Casestudy from "../components/CaseBio";
 import BackButton from "../components/BackButton";
 import BildeSeksjon from '../components/BildeSeksjon';
 

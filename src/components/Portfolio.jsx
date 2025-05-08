@@ -29,10 +29,8 @@ const PortfolioSection = () => {
                   Skilteffektuering: Bestill skilt på 1, 2, 3!
                 </h1>
                 <p className="pb-4">
-                  Oslo kommunes offisielle parkeringsapp utviklet for å gjøre
-                  hverdagen enklere for bilister i byen. Styr parkeringen med
-                  god prisinformasjon, betal elbillading, kjøp piggdekkoblat og
-                  finn HC-parkeringsplasser på en effektiv måte.
+                En intern webapplikasjon utviklet for å forenkle en personavhengig og tidkrevende prosess. 
+                Med færre manuelle steg og en smartere flyt, gjør løsningen det mulig å bestille, følge opp og kvalitetssikre trafikkskilt – raskt og effektivt.
                 </p>
                 <Link
                   className="mt-4  bg-[#FFE7BC] hover:bg-[#F9C66B]  text-neutral-900 font-bold py-2 px-4 border-b-4 border-[#F9C66B] hover:border-[#FFAE1E] rounded"

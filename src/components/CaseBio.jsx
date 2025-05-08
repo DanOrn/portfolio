@@ -60,33 +60,13 @@ const Casestudy2 = () => {
       <section className="font-robotoserif px-8 py-12 mx-auto max-w-[1024px]">
         <h2 className="text-4xl font-bold mb-6">Utfordringer</h2>
         <div className="space-y-6 text-xl">
-          {[
-            {
-              title: "Brukeropplevelse",
-              text: "Flere sammensatte utfordringer påvirket brukeropplevelsen negativt, noe som ble gjenspeilet i nedgang i appens vurderinger i App Store og Google Play de to siste årene.",
-            },
-            {
-              title: "Visuelt design og designsystem",
-              text: "Appen hadde et klart behov for en visuell oppgradering og et konsistent designsystem for å sikre en helhetlig opplevelse på tvers av flater.",
-            },
-            {
-              title: "Universell utforming",
-              text: "Som offentlig app er det strenge krav om at løsningen skal være tilgjengelig for alle brukere. For å etterleve UU-tilsynets retningslinjer, var det derfor nødvendig å basere design og utvikling på prinsippene for universell utforming.",
-            },
-            {
-              title: "Parkeringsinformasjon",
-              text: "Mangelfull informasjon før, under og etter parkeringsøkter skapte usikkerhet blant brukerne.",
-            },
-            {
-              title: "Ny prismodell for lading",
-              text: "Fagavdelingen ønsket å innføre kWt-betaling på ladeplasser i Oslo kommune for å håndtere et marked preget av ustabile strømpriser.",
-            },
-          ].map((item, index) => (
-            <div key={index}>
-              <h3 className="font-bold text-xl mb-2">{item.title}</h3>
-              <p>{item.text}</p>
-            </div>
-          ))}
+          <p className="mb-2">Appen hadde flere sammensatte utfordringer som bidro til en svekket brukeropplevelse – noe som også ble gjenspeilet i nedgangen i brukervurderingene i App Store og Google Play. </p>
+          <p className="mb-2">Det visuelle uttrykket var utdatert, og mangelen på et helhetlig designsystem førte til et fragmentert grensesnitt på tvers av flater. 
+          Som offentlig tjeneste måtte løsningen også tilpasses strenge krav til universell utforming, noe som ikke var godt ivaretatt i tidligere versjoner.</p>
+
+          <p className="mb-2">Samtidig opplevde brukerne frustrasjon knyttet til mangelfull parkeringsinformasjon – både før, under og etter parkering – noe som skapte usikkerhet. </p>
+          <p className="mb-2">I tillegg medførte endringer i markedet behov fra fagavdelingen om å utvikle en ny funksjonalitet som kunne håndtere en mer kompleks prismodell for lading, basert på kWt og tilpasset varierende strømpriser.</p>
+    
         </div>
       </section>
 
@@ -434,50 +414,7 @@ const Casestudy2 = () => {
       </section>
 
       {/* Seksjon: Strømappen */}
-      <section className="p-8 mx-auto max-w-[1024px] ">
-        <div className="mb-8 gap-8 flex justify-between h-[610px]">
-          <div className="flex items-center">
-            <div>
-              <h4 className="text-lg font-bold mb-2">
-                Implementering av ny prismodell for lading
-              </h4>
-              <ul className="list-disc pl-6 space-y-2">
-                <li>
-                  Omstrukturert innhold – Gjorde navigasjonen mer intuitiv og
-                  forbedret oversikten på siden.
-                </li>
-                <li>
-                  Universell utforming – Optimaliserte klikkbare områder og
-                  forbedret kontraster for å oppfylle UU-krav og sikre bedre
-                  tilgjengelighet.
-                </li>
-                <li>
-                  Ikoner for rask navigasjon – Designet nye ikoner for å gjøre
-                  brukergrensesnittet mer scanbart og brukervennlig.
-                </li>
-                <li>
-                  Illustrasjon av bil og innloggingsstatus – Lagt til en
-                  illustrasjon for å skape en mer visuell og lettlest opplevelse
-                  på en teksttung side.
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="w-full max-w-[300px]">
-            <Lottie animationData={losning4} loop={true} />
-          </div>
-          <div className="relative w-full max-w-[300px] h-[610px]">
-            <ReactCompareImage
-              leftImage={losning2}
-              rightImage={losning3}
-              alt="Sammenligning av før- og etterbilde"
-              sliderLineColor="#38363D"
-              sliderPositionPercentage={0.5}
-            />
-          </div>
-        </div>
-      </section>
+     
       <section className="p-8 mx-auto max-w-[1024px] ">
         <div className="mb-8 gap-8 flex justify-between">
           <div className="flex items-center">
@@ -486,13 +423,9 @@ const Casestudy2 = () => {
                 Oppsummering og veien videre
               </h4>
               <p className="mb-3">
-                <strong>Helhetlig og bra</strong> <br />
-                Mange av appens sider fremsto som umoderne og brøt med flere
-                etablerte estetiske prinsipper. Jeg tok utgangspunkt i
-                dropdown-komponenten fra navigasjonsmenyen i designsystemet
-                (tilpasset desktop), og videreutviklet den for mobil. Løsningen
-                ble optimalisert med touchflater, tekststørrelser og kontraster
-                som oppfyller kravene til universell utforming.
+              Appen har fått et tydelig løft i både funksjon og form, med nytt designsystem, bedre tilgjengelighet og mer presis informasjon for brukerne. Resultatene har vært merkbare – færre henvendelser, bedre forståelse av prismodeller og en økning i vurderingene fra 4,2 til 4,6 i App Store.
+
+              Veien videre handler om kontinuerlig forbedring ved å brukerteste, overvåke effekten av varslinger og prismodeller, samt utvikle designsystemet i takt med nye behov.
               </p>
             </div>
           </div>
