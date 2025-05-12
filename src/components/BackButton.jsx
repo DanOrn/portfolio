@@ -1,5 +1,5 @@
 import React from "react";
-import { IoMdArrowRoundBack } from "react-icons/io";
+import { RiArrowLeftLine } from "react-icons/ri";
 import { useNavigate } from "react-router-dom";
 
 const BackButton = () => {
@@ -11,18 +11,24 @@ const BackButton = () => {
 
     return (
         <button
-            className="cursor-pointer  text-gray-100 "
             onClick={handleGoBack}
         >
             <div
                 className="flex justify-center items-center
-                    bg-neutral-100
+                font-medium
+                    bg-neutral-200
+                    hover:cursor-pointer
+                    hover:text-neutral-700 
                     text-neutral-900
                     dark:bg-neutral-800
-                    dark:text-neutral-100 py-2  px-4 rounded-3xl "
+                    dark:text-neutral-100 py-2  px-4 rounded-3xl
+                    dark:hover:text-neutral-300 "
             >
-                <IoMdArrowRoundBack size={24} className="" />
-                <span className="ml-2  font-medium ">Tilbake</span>
+        <div className="flex justify-center items-center">
+        <RiArrowLeftLine className="mr-2" size={24} />
+          Tilbake
+          
+        </div>
             </div>
         </button>
     );

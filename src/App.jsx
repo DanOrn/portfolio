@@ -1,4 +1,5 @@
-import { Route, Routes } from "react-router";
+import { Route, Routes, useLocation } from "react-router-dom";
+import { useEffect } from 'react';
 import Index from "./pages/LandingPage";
 import ElektrondPage from "./pages/ElektrondPage";
 import BiliosloPage from "./pages/BiliosloPage";
@@ -7,6 +8,14 @@ import ScrollToTop from "react-scroll-to-top";
 import { FaArrowUp } from "react-icons/fa";
 
 function App() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (window.hj) {
+      hj('stateChange', location.pathname);
+    }
+  }, [location]);
+
   return (
     <div className="bg-neutral-50 dark:bg-neutral-900 ">
       <Routes>
