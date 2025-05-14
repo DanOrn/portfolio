@@ -6,7 +6,7 @@ import Retur from "../assets/returnering.png";
 
 function BildeSeksjonSkil() {
   return (
-<section className="flex justify-center items-center gap-24 w-screen h-[800px] overflow-hidden bg-[#D1F9FF]">
+<section className="flex justify-center items-center gap-24 w-screen h-[800px] overflow-hidden bg-[#2A2859]">
   <div className="rotate-[30deg] pb-96">
     
     <img src={Klartilbestilling} alt="onboarding1" className="w-[2000px] h-auto" />
