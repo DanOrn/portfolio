@@ -26,7 +26,7 @@ const CaseSkilt = () => {
             },
             {
               title: "Tidsramme",
-              items: ["4 mnd konsept utvikling", "1,2 år forvaltning"],
+              items: ["4 mnd konsept utvikling", "1,2 år videreutvikling"],
             },
             {
               title: "Min rolle",
@@ -153,41 +153,13 @@ const CaseSkilt = () => {
             Bruk av UX-prinsipper på design av én bestilling
           </h4>
           <p className="mb-4">
-            Skjermbildet under viser hvordan jeg har brukt sentrale UX-lover for
-            å gjøre et komplekst saksbehandlingsverktøy enklere og mer effektivt
-            i bruk:
-          </p>
-          <ul className="space-y-3 list-none">
-            <li className="">
-              <strong>Hick’s Law:</strong> Antall synlige valg er redusert til
-              det nødvendige – f.eks. "Bestill" og "Returner STR Sak" – dette
-              for å gjøre hovedhandlingene enkle å velge mellom.
-            </li>
-            <li className="">
-              <strong>Fitts’s Law:</strong> Viktige handlingsknapper er plassert
-              nederst til høyre, lett tilgjengelig og med god størrelse for rask
-              interaksjon.
-            </li>
-            <li className="">
-              <strong>Jakob’s Law:</strong> Layouten følger etablerte mønstre
-              fra lignende forvaltningssystemer (venstremeny for navigasjon,
-              detaljpanel i midten, metadata til høyre), noe som gjør
-              grensesnittet lett gjenkjennelig.
-            </li>
-            <li className="">
-              <strong>Law of Proximity:</strong> Relatert informasjon er organisert i tydelige seksjoner – som bla. "Oppdragsbeskrivelse" og "Grunnlag fra forskrift" i Saksoversikten, og "Saksbehandler" og "Viktige datoer" i Bestillingsinfo – noe som gir en logisk og lettnavigert informasjonsstruktur.
-            </li>
-            <li className="">
-              <strong>Aesthetic-Usability Effect:</strong> Et ryddig og nøytralt
-              visuelt uttrykk med god typografi, fargebruk og ikonografi gjør
-              systemet mer brukervennlig og tillitvekkende.
-            </li>
-          </ul>
-          <p className="mt-4">
-            Dette bidrar til en arbeidsflate som hjelper brukeren å fokusere,
-            navigere raskt og ta informerte beslutninger uten unødvendig
-            kognitiv belastning.
-          </p>
+            På skjermbildet under, har jeg brukt sentrale UX-prinsipper for å gjøre et komplekst saksbehandlingsverktøy enklere og mer effektivt å bruke.</p>
+            <p className="mb-4">Ved å følge <strong>Fitts’s Law</strong> har jeg plassert viktige handlingsknapper nederst til høyre, der de er lett tilgjengelige og har riktig størrelse for rask interaksjon. 
+            Layouten er bygget i tråd med <strong>Jakob’s Law</strong>, og følger etablerte mønstre fra lignende forvaltningssystemer, 
+            som venstremeny for navigasjon, detaljpanel i midten og metadata til høyre. Dette skaper et grensesnitt som er lett gjenkjennelig for brukeren.
+             Jeg har også brukt <strong>Aesthetic-Usability Effect</strong> for å sikre et rent og nøytralt visuelt uttrykk, med god typografi, fargevalg og ikonografi, som både forbedrer systemets brukervennlighet og øker tilliten til løsningen.</p>
+
+<p className="mb-4">Denne helhetlige tilnærmingen gir en arbeidsflate som gjør det lettere for brukeren å fokusere, navigere raskt og ta informerte beslutninger, samtidig som den reduserer kognitiv belastning.</p>
           <img
             className="mb-8"
             alt="Skjermbilde av siden Saksinformasjon"
@@ -269,11 +241,13 @@ const CaseSkilt = () => {
               </h4>
               <p className="mb-3">
                 
-                Gjennom utviklingen av Skilteffektuering har vi forvandlet en manuell og fragmentert prosess til en effektiv digital løsning. Ved å redusere manuelle oppgaver <strong>fra 48 til 16</strong>, har saksbehandlerne gått <strong>fra å bruke 29 timer per måned på bestillinger til kun 3,5 timer.</strong> Dette har frigjort tid og økt effektiviteten betydelig.
+                Gjennom utviklingen av Skilteffektuering har vi forvandlet en manuell og fragmentert prosess til en effektiv digital løsning. 
+                Ved å redusere manuelle oppgaver <strong>fra 48 til 16</strong>, har bestillere gått <strong>fra å bruke 29 timer per måned på bestillinger til kun 3,5 timer. </strong>
+                Dette har frigjort tid og økt effektiviteten betydelig.</p>
 
-Løsningen gir saksbehandlere full oversikt, montører en forenklet versjon og andre avdelinger mulighet til å bestille skilt på egen hånd med veiledning. Designet er brukervennlig og tilpasset ulike enheter og brukergrupper.
+<p className="mb-3">Løsningen gir også bestillere full oversikt, montører en forenklet versjon og andre avdelinger mulighet til å bestille skilt på egen hånd med veiledning. Designet er brukervennlig og tilpasset ulike enheter og brukergrupper.</p>
 
-Veien videre innebærer kontinuerlig forbedring basert på tilbakemeldinger, med fokus på ytterligere automatisering og integrasjon med andre interne verktøy.
+<p className="mb-3">Veien videre innebærer kontinuerlig forbedring basert på tilbakemeldinger, med fokus på ytterligere automatisering og integrasjon med andre interne verktøy.
               </p>
             </div>
           </div>

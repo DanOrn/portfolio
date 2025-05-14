@@ -3,8 +3,7 @@ import { Link } from "react-scroll";
 
 const AboutSection = () => {
   return (
-    <div className="h-screen">
-      <div className="mt-24 flex h-screen justify-center items-center">
+      <div className="mt-24 flex h-screen justify-center items-center sm:p-2">
         <div>
         <h1 className="text-4xl font-robotoserif font-bold pb-8">
             Hei, mitt navn er Daniel! &#128075;
@@ -21,13 +20,11 @@ const AboutSection = () => {
              </p>
 
           <div className="flex max-w-[230px] justify-between mt-4 font-robotoserif text-lg  text-white dark:text-[#202020] ">
-            <Link to="portfolio" offset={-48} smooth={true} duration={500}>
-              <button className="mt-4  bg-[#FFE7BC] hover:bg-[#F9C66B]  text-neutral-900 font-bold py-2 px-4 border-b-4 border-[#F9C66B] hover:border-[#FFAE1E] rounded">
-                Se utvalgte prosjekter
-              </button>
+            <Link className="mt-4 cursor-pointer bg-[#FFE7BC] hover:bg-[#F9C66B]  text-neutral-900 font-bold py-2 px-4 border-4 border-[#F9C66B] " to="portfolio" offset={-48} smooth={true} duration={500}>
+            Se utvalgte prosjekter
+
             </Link>
           </div>
-        </div> 
         </div>
           
 

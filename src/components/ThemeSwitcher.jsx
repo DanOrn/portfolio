@@ -30,14 +30,14 @@ const ThemeSwitcher = () => {
     >
       {theme === "dark" ? (
         <>
-          <div className="flex justify-center items-center bg-neutral-800   text-gray-100 py-2  px-4 rounded-3xl w-40">
+          <div className="flex justify-center items-center bg-neutral-800   text-gray-100 py-2  px-4 w-44 border-4 border-neutral-700">
             <span className="mr-3">Lys modus</span>
             <BsSunFill size={24} className="text-[#F9C66B]"/>
           </div>
         </>
       ) : (
         <>
-          <div className="flex justify-center items-center bg-gray-200 text-gray-800 py-2  px-4 rounded-3xl w-40">
+          <div className="flex justify-center items-center bg-gray-200 text-gray-800 py-2  px-4  w-44 border-4 border-gray-300">
             <span className="mr-3  font-medium ">Mørk modus</span>
             <FaMoon size={20} className="" />
           </div>

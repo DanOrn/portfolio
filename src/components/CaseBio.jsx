@@ -423,9 +423,10 @@ const Casestudy2 = () => {
                 Oppsummering og veien videre
               </h4>
               <p className="mb-3">
-              Appen har fått et tydelig løft i både funksjon og form, med nytt designsystem, bedre tilgjengelighet og mer presis informasjon for brukerne. Resultatene har vært merkbare – færre henvendelser, bedre forståelse av prismodeller og en økning i vurderingene fra 4,2 til 4,6 i App Store.
+              Appen har fått et tydelig løft i både funksjon og form, med nytt designsystem, bedre tilgjengelighet og mer presis informasjon for brukerne.</p>
+               <p className="mb-3">Resultatene har vært merkbare – færre henvendelser, bedre forståelse av prismodeller og en økning i vurderingene både i App Store (4,2 til 4,6) og Google Play (4,0 til 4,2).</p>
 
-              Veien videre handler om kontinuerlig forbedring ved å brukerteste, overvåke effekten av varslinger og prismodeller, samt utvikle designsystemet i takt med nye behov.
+              <p className="mb-3">Veien videre handler om kontinuerlig forbedring ved å brukerteste, overvåke effekten av varslinger og prismodeller, samt utvikle designsystemet i takt med nye behov.
               </p>
             </div>
           </div>
