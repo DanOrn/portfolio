@@ -25,9 +25,9 @@ function App() {
         <Route path="skilteffektuering" element={<SkilteffektueringPage />} />
       </Routes>
               <ScrollToTop
-        className="mr-12   flex justify-center items-center   !bg-neutral-900 text-neutral-50 dark:!bg-white dark:text-neutral-900 "
+        className="mr-12 !rounded-none  flex justify-center items-center   !bg-neutral-800 text-neutral-50 dark:!bg-neutral-100 dark:text-neutral-900 "
         smooth
-        component={<FaArrowUp size={30} />}
+        component={<FaArrowUp size={32} />}
       />
 
     </div>
