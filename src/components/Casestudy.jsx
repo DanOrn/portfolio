@@ -17,9 +17,9 @@ const Casestudy = () => {
   return (
     <div className="w-full text-lg ">
       <img className="rounded-b-md h-1/4 " alt="alttekst" src={bannerstrom} />
-      <div className="h-full max-w-[1080px] my-6 mx-auto text-[#202020] dark:text-white ">
+      <div className="h-full max-w-[1080px] my-6 mx-auto  dark:text-white ">
         <h1 className="my-12 text-5xl font-bold">
-        Elektrond - Smarthus og strøm i én app
+          Elektrond - Smarthus og strøm i én app
         </h1>
         <div className="flex justify-between">
           <div>
@@ -49,7 +49,7 @@ const Casestudy = () => {
             </ul>
           </div>
         </div>
-        <div className="my-24 font-robotoserif">
+        <div className="my-24">
           <h1 className=" text-3xl font-bold my-4">Oppgaven vi fikk</h1>
           <p className=" text-xl italic">
             Lag en «strøm-smartapp/tjeneste», som gjør det enklere for folk å ha
@@ -57,7 +57,7 @@ const Casestudy = () => {
             strømforbruk å gjøre.
           </p>
         </div>
-        <div className="my-8 font-robotoserif flex flex-col justify-center">
+        <div className="my-8 flex flex-col justify-center">
           <h1 className=" text-3xl font-bold mb-4">Løsningen</h1>
           <p className="text-base">
             Du finner en klikkbar prototype i Figma på bunnen av denne siden.
@@ -164,12 +164,10 @@ const Casestudy = () => {
           </div>
         </div>
 
-        <h1 className="mb-4 mt-24 text-3xl font-robotoserif font-bold">
-          Research
-        </h1>
+        <h1 className="mb-4 mt-24 text-3xl font-bold">Research</h1>
         <div className="flex gap-12">
           <div className="w-1/2">
-            <h2 className="mb-4 text-xl font-bold font-robotoserif">
+            <h2 className="mb-4 text-xl font-bold">
               &#9732;&#65039; Konkurentanalyse
             </h2>
             <p className="mb-4">
@@ -183,7 +181,7 @@ const Casestudy = () => {
           </div>
 
           <div className="w-1/2">
-            <h2 className="mb-4 text-xl font-bold font-robotoserif">
+            <h2 className="mb-4 text-xl font-bold">
               &#128760; Spørreundersøkelse
             </h2>
             <p className="mb-4">
@@ -217,7 +215,7 @@ const Casestudy = () => {
         </div>
         <div className="flex py-12 gap-12">
           <div className="w-1/2">
-            <h2 className="text-xl font-bold font-robotoserif">🧑 Personas</h2>
+            <h2 className="text-xl font-bold">🧑 Personas</h2>
             <p className="my-4">
               I interaksjonsdesign er persona mye brukt, og fungerer som et
               verktøy ved utvikling av løsninger. Hensikten med å utvikle
@@ -228,7 +226,7 @@ const Casestudy = () => {
             <Modal3 />
           </div>
           <div className="w-1/2">
-            <h2 className="text-xl font-bold font-robotoserif">🗺️ Sitemap</h2>
+            <h2 className="text-xl font-bold">🗺️ Sitemap</h2>
             <p className="my-4">
               Site Map ser følgende ut. Denne er basert på den første User-Flow
               skissen som vi har laget der vi prøvde å tegne fram de
@@ -242,9 +240,7 @@ const Casestudy = () => {
         <div className="flex gap-12 py-12">
           {" "}
           <div className="w-1/2">
-            <h2 className=" text-xl font-bold font-robotoserif">
-              📱 Low-Mid Wireframe
-            </h2>
+            <h2 className=" text-xl font-bold">📱 Low-Mid Wireframe</h2>
             <p className="my-4">
               Wireframes brukes tidlig i interaksjonsprosessen for å utforske
               konsepter, og vise hvordan løsninger kan imøtekomme potensielle
@@ -254,9 +250,7 @@ const Casestudy = () => {
             <Modal5 />
           </div>
           <div className="w-1/2">
-            <h2 className="text-xl font-bold font-robotoserif">
-              👥 Brukertest
-            </h2>
+            <h2 className="text-xl font-bold">👥 Brukertest</h2>
             <p className="my-4">
               Formålet med å gjennomføre brukertesting er å få tilbakemeldinger
               på løsningen fra eventuelle sluttbrukere. Selv om vi tar

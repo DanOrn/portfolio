@@ -20,7 +20,7 @@ const icons = import.meta.glob("../assets/ikonerbio/*.svg", {
 
 const Casestudy2 = () => {
   return (
-    <div className="w-full font-robotoserif text-xl leading-[1.5] text-[#202020] dark:text-white">
+    <div className="w-full text-xl leading-[1.5] dark:text-white">
       {/* Seksjon: Prosjektbeskrivelse */}
       <section className="px-8 pt-12 mx-auto max-w-[1024px]">
         <h1 className="mb-10 text-5xl font-bold">
@@ -57,7 +57,7 @@ const Casestudy2 = () => {
         </div>
       </section>
 
-      <section className="font-robotoserif px-8 py-12 mx-auto max-w-[1024px]">
+      <section className="px-8 py-12 mx-auto max-w-[1024px]">
         <h2 className="text-4xl font-bold mb-6">Utfordringer</h2>
         <div className="space-y-6 text-xl">
           <p className="mb-2">Appen hadde flere sammensatte utfordringer som bidro til en svekket brukeropplevelse – noe som også ble gjenspeilet i nedgangen i brukervurderingene i App Store og Google Play. </p>
@@ -94,7 +94,7 @@ const Casestudy2 = () => {
             {Object.entries(icons).map(([path, Icon], index) => (
               <Icon
                 key={index}
-                className=" w-12 h-12 text-[#202020] dark:text-white"
+                className=" w-12 h-12  dark:text-white"
               />
             ))}
           </div>

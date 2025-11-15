@@ -1,47 +1,29 @@
-import React, { useEffect, useState } from "react";
-import { FaMoon } from "react-icons/fa";
 import { BsSunFill } from "react-icons/bs";
+import { FaMoon } from "react-icons/fa";
+import { useTheme } from "../context/ThemeContext";
 
 const ThemeSwitcher = () => {
-  const [theme, setTheme] = useState(() => {
-    if (typeof window !== 'undefined' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      return 'dark';
-    } else {
-      return 'light';
-    }
-  });
-
-  useEffect(() => {
-    if (theme === "dark") {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  }, [theme]);
+  const { theme, toggleTheme } = useTheme();
 
   const handleThemeSwitch = () => {
-    setTheme(theme === "dark" ? "light" : "dark");
+    toggleTheme();
   };
 
   return (
     <button
       onClick={handleThemeSwitch}
-      className=" cursor-pointer"
+      className="cursor-pointer font-medium hover:font-semibold"
     >
       {theme === "dark" ? (
-        <>
-          <div className="flex justify-center items-center bg-neutral-800   text-gray-100 py-2  px-4 w-44 border-4 border-neutral-700">
-            <span className="mr-3">Lys modus</span>
-            <BsSunFill size={24} className="text-[#F9C66B]"/>
-          </div>
-        </>
+        <div className="bg-zinc-800 px-4 py-2 rounded-full border border-white flex items-center w-fit hover:shadow-[4px_4px_white,_4px_4px_0_1px_white] transition-all duration-200 ease-linear">
+          <span className="mr-3">Lys modus</span>
+          <BsSunFill size={24} className="text-white" />
+        </div>
       ) : (
-        <>
-          <div className="flex justify-center items-center bg-gray-200 text-gray-800 py-2  px-4  w-44 border-4 border-gray-300">
-            <span className="mr-3  font-medium ">Mørk modus</span>
-            <FaMoon size={20} className="" />
-          </div>
-        </>
+        <div className="bg-[#fffefb] px-4 py-2 rounded-full border border-[#2f2f2f] flex items-center w-fit hover:shadow-[4px_4px_#2f2f2f,_4px_4px_0_1px_#2f2f2f] transition-all duration-200 ease-linear">
+          <span className="mr-3 ">Mørk modus</span>
+          <FaMoon size={24} className="" />
+        </div>
       )}
     </button>
   );

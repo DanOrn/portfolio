@@ -2,6 +2,29 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+body {
+  color: #2f2f2f;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  margin: 0;
+}
+
+body p {
+  line-height: 1.7;
+  font-weight: 400;
+  letter-spacing: 0.1;
+}
+
+main {
+  display: block;
+}
 
 /* Skjuler scrollbar for IE, Edge og Firefox */
 * {
@@ -37,5 +60,3 @@
 .scrollbar-visible::-webkit-scrollbar-track {
   background-color: #f1f1f1; /* Lys grå bakgrunn */
 }
-
-

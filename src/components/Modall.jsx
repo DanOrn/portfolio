@@ -15,7 +15,7 @@ export default function Modall() {
       </button>
       {showModal ? (
         <>
-          <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed w-full h-full inset-0 z-50 bg-neutral-50 dark:bg-neutral-900 text-[#202020] dark:text-white">
+          <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed w-full h-full inset-0 z-50 bg-neutral-50 dark:bg-neutral-900  dark:text-white">
             <div className="h-screen  mx-auto">
               <div className=" relative flex flex-col w-full ">
                 {/*header*/}

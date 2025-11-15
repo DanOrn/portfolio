@@ -1,5 +1,5 @@
 import { Route, Routes, useLocation } from "react-router-dom";
-import { useEffect } from 'react';
+import { useEffect } from "react";
 import Index from "./pages/LandingPage";
 import ElektrondPage from "./pages/ElektrondPage";
 import BiliosloPage from "./pages/BiliosloPage";
@@ -12,24 +12,37 @@ function App() {
 
   useEffect(() => {
     if (window.hj) {
-      hj('stateChange', location.pathname);
+      hj("stateChange", location.pathname);
     }
   }, [location]);
 
   return (
-    <div className="bg-neutral-50 dark:bg-neutral-900 ">
+    <div className="bg-[#fffefb] dark:bg-zinc-800 ">
       <Routes>
         <Route index element={<Index />} />
         <Route path="elektrond" element={<ElektrondPage />} />
         <Route path="bilioslo" element={<BiliosloPage />} />
         <Route path="skilteffektuering" element={<SkilteffektueringPage />} />
       </Routes>
-              <ScrollToTop
-        className="mr-12 !rounded-none  flex justify-center items-center   !bg-neutral-800 text-neutral-50 dark:!bg-neutral-100 dark:text-neutral-900 "
+      <ScrollToTop
         smooth
-        component={<FaArrowUp size={32} />}
+        scrollableTarget="header"
+        className="
+    hidden sm:flex 
+    items-center justify-center !h-12 !w-12 mr-12 !rounded-full
+    !bg-[#fffefb] !text-zinc-800 
+    dark:!bg-zinc-800 dark:!text-white
+    !border 
+    dark:!border-white 
+    !border-[#2f2f2f] 
+    dark:hover:!shadow-[4px_4px_#fffefb,_4px_4px_0_1px_#fffefb] 
+    dark:!shadow-none
+    !shadow-none
+    hover:!shadow-[4px_4px_#2f2f2f,_4px_4px_0_1px_#2f2f2f] 
+    !transition-all !duration-200 !ease-linear
+  "
+        component={<FaArrowUp size={24} />}
       />
-
     </div>
   );
 }

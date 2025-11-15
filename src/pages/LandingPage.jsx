@@ -1,19 +1,20 @@
 import React from "react";
-import PortfolioSection from "../components/Portfolio";
-import AboutSection from "../components/About";
+import Arbeid from "../components/Arbeid";
+import Header from "../components/Header";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const Index = () => {
   return (
-    <div id="about" name="about" className="  text-neutral-800 dark:text-white  ">
-      <div className="mt-[-4rem] max-w-[1140px] mx-auto ">
+    <div id="about" name="about" className="  dark:text-white  ">
+      <div className="max-w-[1140px] mx-auto">
         <Navbar />
-        <AboutSection />
-        <PortfolioSection />  
+        <Header />
+        <Arbeid />
+
+        <Footer />
       </div>
     </div>
-    
-    
   );
 };
 

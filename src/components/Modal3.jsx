@@ -20,7 +20,7 @@ export default function Modal() {
       </button>
       {showModal ? (
         <>
-          <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed w-full h-full inset-0 z-50 bg-neutral-50 dark:bg-neutral-900 text-[#202020] dark:text-white">
+          <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed w-full h-full inset-0 z-50 bg-neutral-50 dark:bg-neutral-900  dark:text-white">
             <div className="h-screen max-w-[1140px] mx-auto">
               <div className=" relative flex flex-col w-full ">
                 {/*header*/}
@@ -37,7 +37,7 @@ export default function Modal() {
                 </div>
                 {/*body*/}
                 <div className="w-auto">
-                  <div className="h-full max-w-[1140px] my-12 mx-auto px-4 text-[#202020] dark:text-white ">
+                  <div className="h-full max-w-[1140px] my-12 mx-auto px-4  dark:text-white ">
                     <div className="grid grid-rows-2 gap-4">
                       <div className="flex gap-12">
                         <img

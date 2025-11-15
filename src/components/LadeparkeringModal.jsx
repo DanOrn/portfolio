@@ -21,7 +21,7 @@ export default function Modal() {
       </a>
       {showModal ? (
         <>
-          <div className="justify-center items-center flex fixed h-screen inset-0 z-50 bg-neutral-50 dark:bg-neutral-900 text-[#202020] dark:text-white">
+          <div className="justify-center items-center flex fixed h-screen inset-0 z-50 bg-neutral-50 dark:bg-neutral-900  dark:text-white">
             <div className=" max-w-[1140px] mx-auto">
                 {/*header*/}
 

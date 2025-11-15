@@ -3,16 +3,14 @@ import Casestudy from "../components/Casestudy";
 import BackButton from "../components/BackButton";
 
 export default function ElektrondPage() {
-
   return (
-    
-    <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto w-full h-full bg-neutral-50 dark:bg-neutral-900 text-[#202020] dark:text-white">
+    <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto w-full h-full bg-neutral-50 dark:bg-neutral-900  dark:text-white">
       <div className="h-screen  mx-auto">
         <div className=" relative flex flex-col w-full ">
           {/*header*/}
           <div className="fixed left-0">
             <div className="flex items-start justify-between pt-12 pl-24  rounded-t">
-             <BackButton />
+              <BackButton />
             </div>
           </div>
 

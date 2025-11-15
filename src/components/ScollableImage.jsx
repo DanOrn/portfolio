@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import SkilFlyt from "../assets/skilflyt.png";
+import SkilFlyt from "../assets/prosjektbilder/skiltbestillingsflyt.png";
 
 function ScrollableImage() {
   const scrollRef = useRef(null);
@@ -30,22 +30,26 @@ function ScrollableImage() {
   };
 
   return (
-    <div
-      ref={scrollRef}
-      className="scrollbar-visible w-full overflow-x-scroll cursor-grab active:cursor-grabbing select-none"
-      onMouseDown={handleMouseDown}
-      onMouseLeave={handleMouseLeave}
-      onMouseUp={handleMouseUp}
-      onMouseMove={handleMouseMove}
-    >
-      <div className="min-w-[2000px]">
-        <img
-          src={SkilFlyt}
-          draggable={false}
-          className="h-full w-auto"
-          alt="Brukerreise flyt"
-        />
+    <div>
+      <div
+        ref={scrollRef}
+        className="scrollbar-visible w-full overflow-x-scroll cursor-grab active:cursor-grabbing select-none"
+        onMouseDown={handleMouseDown}
+        onMouseLeave={handleMouseLeave}
+        onMouseUp={handleMouseUp}
+        onMouseMove={handleMouseMove}
+      >
+        <div className="min-w-[2000px]">
+          <img
+            src={SkilFlyt}
+            draggable={false}
+            className="h-full w-auto"
+            alt="Brukerreise flyt"
+          />
+        </div>
       </div>
+
+      <p>Klikk og dra mot venstre, eller bruk scroll for å se hele flyten.</p>
     </div>
   );
 }
