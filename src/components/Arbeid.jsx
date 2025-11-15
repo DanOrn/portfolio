@@ -1,4 +1,4 @@
-import Elektrondthumb from "../assets/elektrondthumb.png";
+import Elektrondthumb from "../assets/Elektrondthumb.png";
 import Skilthumb from "../assets/skilthumb1.png";
 import Biothumb from "../assets/Biothumb.png";
 import ProjectBlue from "./ProjectBlue";
